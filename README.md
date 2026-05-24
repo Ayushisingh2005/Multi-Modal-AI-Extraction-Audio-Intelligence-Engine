@@ -16,18 +16,16 @@ LexiScript Pro is a state-of-the-art neural synthesis platform that bridges the 
 
 ## 🛠️ Tech Stack
 
-|Frontend     |                                                             |
-| ----------- | ----------------------------------------------------------- |
-|Framework:   | Next.js 14+ (App Router)                                    |
-|Styling:     |Tailwind CSS v4, Glassmorphism UI                            |
-|Animations:  | Framer Motion, HTML5 Canvas API                             |
-|Deployment:  | Vercel                                                      |
-|Backend      |                                                             |
-| ------------| ----------------------------------------------------------- |
-|Framework:   | FastAPI (Python 3.10)                                       |
-|AI Models:   | Google Gemini 1.5 Flash (Vision), Groq Whisper-V3 (Acoustic)|
-|Speech:      | Edge-TTS (Neural Synthesis)                                 |
-|Deployment:  | Render                                                      |
+|Category              | Technology                                                  |
+| -------------------- | ----------------------------------------------------------- |
+|Frontend Framework:   | Next.js 14+ (App Router)                                    |
+|Styling:              |Tailwind CSS v4, Glassmorphism UI                            |
+|Animations:           | Framer Motion, HTML5 Canvas API                             |
+|Deployment:           | Vercel                                                      |
+|Backend Framework:    | FastAPI (Python 3.10)                                       |
+|AI Models:            | Google Gemini 1.5 Flash (Vision), Groq Whisper-V3 (Acoustic)|
+|Speech:               | Edge-TTS (Neural Synthesis)                                 |
+|Deployment:           | Render                                                      |
 ---
 ## 📂 Project Structure
 ```
