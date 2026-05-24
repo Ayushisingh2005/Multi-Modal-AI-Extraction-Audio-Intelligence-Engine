@@ -1,4 +1,4 @@
-# LexiScript Pro: High-Fidelity Multi-Modal Intelligence Engine
+# 🎧 LexiScript Pro: High-Fidelity Multi-Modal Intelligence Engine
 
 LexiScript Pro is a state-of-the-art neural synthesis platform that bridges the gap between unstructured data (Images, Audio, Video, PDFs) and actionable intelligence. It features a high-performance Multi-Modal Extraction Pipeline that not only extracts text but also translates, summarizes, and synthesizes it into high-fidelity neural audio.
 
@@ -90,5 +90,6 @@ Add NEXT_PUBLIC_BACKEND_URL (your Render URL) to Environment Variables.
 * Asynchronous Synthesis: Utilized asyncio in FastAPI to handle non-blocking audio generation, reducing latency for multilingual synthesis.
 * Canvas GPU Acceleration: The moving grid background is rendered via the HTML5 Canvas API instead of CSS DOM elements to ensure 60FPS performance on older hardware.
 * State Management: Implemented useRef based audio controllers in React to manage singleton audio instances, preventing "audio bleeding" during language switches.
+  
 📝 License
 This project is licensed under the MIT License. Developed as a showcase for high-fidelity AI engineering.
