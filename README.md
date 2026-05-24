@@ -92,4 +92,5 @@ Add NEXT_PUBLIC_BACKEND_URL (your Render URL) to Environment Variables.
 * State Management: Implemented useRef based audio controllers in React to manage singleton audio instances, preventing "audio bleeding" during language switches.
   
 📝 License
+
 This project is licensed under the MIT License. Developed as a showcase for high-fidelity AI engineering.
