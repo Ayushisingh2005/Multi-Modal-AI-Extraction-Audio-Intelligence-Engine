@@ -8,6 +8,7 @@ import {
   Languages, Volume2, Loader2, Square, User
 } from 'lucide-react';
 
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "https://multi-modal-ai-extraction-audio-sjlf.onrender.com";
 // --- 1. JAVASCRIPT MOVING GRID COMPONENT ---
 const MovingGrid = () => {
   const canvasRef = useRef(null);
@@ -101,7 +102,7 @@ export default function Home() {
     formData.append('target_lang', targetLang);
 
     try {
-      const res = await axios.post('http://localhost:8000/process', formData);
+      const res = await axios.post(`${BACKEND_URL}/process`, formData);
       setResult(res.data.text);
     } catch (err) {
       alert("Backend Connection Failed. Run python main.py first.");
@@ -138,9 +139,9 @@ export default function Home() {
     formData.append('gender', voiceGender);
 
     try {
-      const response = await axios.post('http://localhost:8000/synthesize', formData, {
-        responseType: 'blob',
-      });
+      const response = await axios.post(`${BACKEND_URL}/synthesize`, formData, {
+  responseType: 'blob',
+});
       const url = window.URL.createObjectURL(new Blob([response.data]));
       
       audioRef.current = new Audio(url);
